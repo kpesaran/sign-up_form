@@ -8,31 +8,41 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img id = 'main-picture' alt='Picture of a table at a restaurant. Credit/Photographer: Bundo Kim' src = 'img/bundo-kim-Pb9bUzH1nD8-unsplash.jpg'>
 
-    <div class = 'container'>
-        <div class = 'text-box' >
-            <p class = 'text'>This is not a real online service, so no need to sign up for anything but if you got this, everything you want would happed. Kind of like  <em>genie in a bottle.</em></p>
-            <p class = 'text'>But if it were... you should sign-up to stay updated on menu changes, events, or product releases</p>
+    <div class="main-container">
+        
+        <div class="picture-container">
+            <img id = 'main-picture' alt='Picture of a table at a restaurant. Credit/Photographer: Bundo Kim' src = 'img/bundo-kim-Pb9bUzH1nD8-unsplash.jpg'>
+            <div class = 'img-card'>
+                <img src="img/257-2576670_fake-black-rectangle-transparent-fake-logo-hd-png.png" alt="fake logo">
+            </div>
         </div>
-        <div class = 'middle-container'>
-            <h2>Let's do this!</h2>
-            <form action="" method='post'>
-                        <div class='form-container'>
-                           
+        
+        <div class = 'right-container'>
+            
+            <div class = 'text-box' >
+                <p class = 'text'>This is not a real online service, so no need to sign up for anything but if you got this, everything you want would happed. Kind of like  <em>genie in a bottle.</em></p>
+                <p class = 'text'>But if it were... you should sign-up to stay updated on menu changes, events, or product releases</p>
+            </div>
+                
+                <form action="" method='post'>
+                    <div class="container top">
+                        <h2>Let's do this!</h2>
+                        <div class="container inputs">
                             <div class="combo">
                                 <label for="first_name">First Name</label>
-                                <input type="text" id="first_name" name='last_name'>
+                                <input type="text" id="first_name" name='last_name'
+                                >
                             </div>
                             <div class="combo">
                                 <label for="last_name">Last Name</label>
                                 <input type="text" id="last_name" name='last_name'>
                             </div>
-                            
                             <div class="combo">
                                 <label for="email">Email</label>
                                 <input type="email" id='email
-                                ' name= 'email'>
+                                ' name= 'email'
+                                required>
                             </div>
                             <div class="combo">
                                 <label for="phone_number">Phone Number</label>
@@ -40,25 +50,24 @@
                             </div>
                             <div class="combo">
                                 <label for="password">Password</label>
-                                <input type="password" name="password" id="password">
+                                <input type="password" name="password" id="password"
+                                required
+                                minlength="6">
                             </div>
-                            
                             <div class="combo">
                                 <label for="confirm_password">Confirm Password</label>
-                                <input type="password" name="confirm_password" id='confirm_password'>
+                                <input type="password" name="confirm_password" id='confirm_password'required >
                             </div>
                         </div>
-
+                    </div>
+                    <div class="container bottom">
+                        <button type="submit">Create Account</button>
+                        <p>Alreay have an account? <a href="">Log In</a></p>
+                    </div>
+                </form>
+            </div>
+                
                     
-                </div>
-
-                <button type="submit">Create Account</button>
-
-                <p>Alreay have an account? <a href="">Log In</a></p>
-
-            </form>
         
+        </div>
     </div>
-    
-</body>
-</html>
